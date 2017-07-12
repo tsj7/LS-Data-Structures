@@ -1,5 +1,23 @@
-class Stack {
+  class Stack {
+    constructor() {
+      this.array = [];
+    }
 
-}
+    add(value) {
+      const newArray = this.array;
+      this.array.push(value);
+      return newArray;
+    }
 
-module.exports = Stack;
+    remove() {
+      const newArray = this.array;
+      this.array.pop();
+      return newArray;
+    }
+    get size() {
+      return this.array.length;
+    }
+    }
+
+  module.exports = Stack;
+  // const newStack = new Stack ()
